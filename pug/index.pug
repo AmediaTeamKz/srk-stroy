@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	meta(name="viewport" content="width=device-width, initial-scale=1")
+	title Ремонт квартир
+	link(rel="stylesheet", href="../css/main.min.css")
+	script(src="../js/scripts.min.js")
+body
+	.modalBg
+		#call.modalSelf
+			.modalHeader
+				h4.modal-title Оставить заявку
+				button.close(modal="call")
+					span
+					span
+
+			.modalBody
+				form(method="post" action="mail.php")
+					input(type="text" placeholder="Ваше имя" name="username")
+					input(type="tel" placeholder="Ваш номер" name="usernumber")
+					input(type="submit" value="Отправить")
+			.modalFooter
+	a#call(href="tel:+77010278008")
+		img(src="/img/phone.png")
+	.top-line
+		.container.df.aic.jsb
+			.box.df.aic.fww
+				a(href="/index.html").logotype
+					img(src="../img/svg/logotype.svg", alt="")
+				p.sub.
+					Ремонт и дизайн квартир в Астане<br/>
+					Мы работаем на качество!
+			.box.dfc.aife.fww
+				span.tel
+					a(href="tel: 87010278008")  87010278008
+				p.sub.
+					с 9.00 до 21.00 без выходных
+			button.hambu
+				span
+				span
+				span
+	.redheader
+		.container
+			.rehe.df.jsb.aic
+				.box
+					a(href="/index.html").logotype
+						img(src="../img/svg/logotype.svg", alt="")
+				.box
+					button.hambu.close
+						span
+						span
+		.container
+			ul.hor-menu.df.aic.jcc
+				li
+					a(href="#warning") дизайн интерьера
+				li
+					a(href="#danger") ремонт квартир
+				li
+					a(href="#danger") ремонт домов и коттеджей
+				li
+					a(href="#danger") ремонт офисов
+
+
+	header#header.header.dfc
+		.container.dfc
+			.header-wrp-text.dfc.jsb.center
+				h1.header-title Ремонт и отделка квартир
+				small.subtitle Ремонт в квартире - это легко!
+				//- small.subtitle.bg привезем, установим - бесплатно!
+			.wrp-brn.dfc.aic
+				a(href="https://wa.me/87010278008").whatsappbtn
+					img(src="../img/svg/whatsapp.svg", alt="") 
+					span написать в whatsapp
+				a(href="tel:87010278008").subwhatsapp или показать номер
+		//- a(href="#short-us").header-down-btn.centerX.df.bottom
+		//- 	img(src="../img/svg/he.svg", alt="").center
+
+	section#short-us
+		.container
+			.wrp-content.dfc
+				h3.section-title.center немного о нас
+				p.paraq.
+					Существует четыре вида ремонта квартиры — элитный, косметический, черновой и капитальный. Сроки выполнения работ, затраты на материалы и оплату работы зависят от начального состояния помещения и сложности необходимой работы. В результате цена отделки помещений зависит от желаний и возможностей хозяина жилища.
+				//- p.paraq.
+					Самое главное, что должны сделать родители – это убедится в том, что ребенок не сможет самостоятельно открыть окно. Не рекомендуется использовать москитные сетки. Они особенно опасны, так как создают иллюзию защиты, но не способны выдержать вес малыша
+				
+
+
+				//- .wrp-icons.df.fww
+				//- 	-
+				//- 		var icons = ['../img/svg/ico1.svg',
+				//- 					 '../img/svg/ico2.svg',
+				//- 					 '../img/svg/ico3.svg'];
+				//- 	-
+				//- 		var text = ['хорошое качество',
+				//- 					'быстрый монтаж',
+				//- 					'оплата по факту'];
+
+				//- 	-for(x=0;x!=3;x++){
+				//- 		.box-icon.aic.dfc
+				//- 			img(src=icons[x])
+				//- 			p= text[x]			
+				//- 		-};
+
+	section#warning
+		.container
+			.wrp-content.dfc
+				//- span.centerX.df.warningsignal
+				//- 	img(src="../img/svg/!.svg", alt="").center
+
+				h3.section-title.centerX.tac.
+					Ремонт квартир под ключ – обретение комфорта, стиля, добротности!
+				p.paraq.
+					Комфортабельный уютный дом – обязательное слагаемое современного стандарта жизни. Строительные технологии и материалы, используемые сегодня для ремонтных и реконструкционных работ, позволяют коренным образом преобразить даже самую запущенную и неудобную квартиру. Каждый может изменить свое жизненное пространство к лучшему, обратившись к профессионалам для выполнения недорогого и качественного ремонта.
+				//- p.paraq.
+				//- 	Самое главное, что должны сделать родители – это убедится в том, что ребенок не сможет самостоятельно открыть окно. Не рекомендуется использовать москитные сетки. Они особенно опасны, так как создают иллюзию защиты, но не способны выдержать вес малыша
+			.wrp-levels.df
+				.box
+					img(src="../img/svg/circle.svg")
+					small Детальное ознакомление<br>планирование сроков
+				.box
+					img(src="../img/svg/circle2.svg")
+					small Разработка чертежей<br> с пожеланиями заказчика
+				.box
+					img(src="../img/svg/circle3.svg")
+					small Фотореалистичная<br> визуализация всех помещений
+
+
+	section#danger
+			.container
+				h3.section-title виды услуг,<br/>которые мы предоставляем
+				.row
+					.col-md-4
+						.box
+							ul.uslugi
+								li(data-tab="1")
+									span Черновой ремонт
+								li(data-tab="3")
+									span Косметический ремонт
+								li(data-tab="4")
+									span Евро ремонт
+								li(data-tab="2") 
+									span Ремонт Premium класса
+					.col-md-6
+						.wrp-tabs-content(tab="1").active
+							h4.subtitle.title Черновой ремонт
+							p.paraq.text
+								<b>Черновой ремонт</b> квартиры, является разновидностью капитального ремонта . Особенность элитного ремонта заключается в том, что такой ремонт «под ключ» в обязательном порядке выполняется по дизайнерскому проекту и часто включает в себя работы по перепланировке помещений . Стоимость такого ремонта является самой высокой
+							ul.listremont
+								li 
+									span Штукатурка стен<br>грубой штукатуркой
+								li 
+									span Монтаж электропроводки<br>(без установки электроточек)
+								li 
+									span Монтаж системы водоснабжения<br>и водоотведения<br>(без установки приборов)
+								li 
+									span Стяжка пола
+							button.call(modal="call") заказать сейчас
+						
+
+
+
+						.wrp-tabs-content(tab="2")
+							h4.subtitle.title ремонт Premium класса
+							p.paraq.text
+								<b>ремонт Premium класса</b> – это понятие очень распространено на сегодняшнем строительном рынке, поэтому сложился определенный набор работ, которые обыкновенно входят в него. Как правило, этот набор включает в себя полностью завершенные строительные и минимальный объем отделочных работ.
+
+							ul.listremont
+								li 
+									span Дизайн
+								li 
+									span Визуализация
+							button.call(modal="call") заказать сейчас
+						
+
+
+						.wrp-tabs-content(tab="3")
+							h4.subtitle.title Косметический ремонт
+							p.paraq.text
+								<b>Косметический ремонт</b> - это реставрация прежнего состояния офисных и жилых помещений без каких-либо кардинальных мер по изменению планировки, водоснабжения, вентиляции и т. п. Он включает в себя :
+							ul.listremont
+								li 
+									span Смену напольного покрытия.
+								li 
+									span Оклейка потолков и стен любым видом обоев<br/> или окраска этих поверхностей (без оштукатуривания).
+								li 
+									span Окраска дверей и окон в квартире.
+								li 
+									span Окраска стояков водоснабжения.
+								li 
+									span Окраска батарей, труб отопления.
+							button.call(modal="call") заказать сейчас
+							
+
+
+
+						.wrp-tabs-content(tab="4")
+							h4.subtitle.title Евро ремонт
+							p.paraq.text
+								<b>Сделать еваро</b> ремонт под ключ хотят многие семьи, ведь при таком виде работ полностью изменится облик помещения, жилье снова станет комфортабельным и уютным. Мы делаем ремонт профессионально, гарантируем качество, соблюдение сроков и отсутствие скрытых платежей – в начале сотрудничества заключается договор.
+							
+							button.call(modal="call") заказать сейчас
+
+					//- ul.list-priv
+					//- 	-
+					//- 		var textlist = ["Нержавеющий\n алюминиевый материал",
+					//- 						'Не ограничивает обзор и не портит эстетический вид окна',
+					//- 						'Решетки легко снимаются и с ними легко мыть окна',
+					//- 						'Установка 1 окна занимает 15 минут'];
+					//- 		var xx = 1;
+					
+					//- 	-for(i=0;i!=4;i++){
+					//- 		li.df.aic
+					//- 			img(src='/img/svg/num/'+xx+'.svg')
+					//- 			p.paraq= textlist[i]
+					//- 			- xx+=1
+					//- 	-};
+
+
+	section#uwork
+		.container
+			.wrp-content.dfc
+				h3.section-title.centerX наши работы
+
+				
+				.grid
+					-
+						var imgs=[
+									'/img/por1.jpeg',
+									'/img/por2.jpeg',
+									'/img/por3.jpeg',
+									'',
+									'',
+									'',
+									'',
+									'',
+								];
+					-for(i=0;i!=3;i++){
+						.box-item
+							img(src=imgs[i])
+					-};
+
+	section#rev
+		.container
+			.wrp-content.dfc
+				.revslider
+					-
+						var names = [
+							'Дарина',
+							'Юлия',
+							'Абзал и Айгуль'
+						];
+					-
+						var textotz = [
+							'Заказала ремонт квартиры компании Ордастрой. Очень довольна результатом, ребята молодцы - установили быстро, мусор убрали. И зимой, на улице мороз, а дома тепло и уютно. Советую всем знакомым и близким.',
+							'Смотрю на сделанный ремонт и получаю удовольствие. С уверенностью могу сказать про компанию Ордастрой - Знак качества. В этой компании все организованно, профессионально быстро и очень качественно. Процветания вам!!',
+							'Заказали ремонт у компании Ордастрой и остались очень довольны! Безмерно благодарны этим ребятам.'
+						];
+					-for(i=0;i!=3;i++){
+						.slider-item.dfc.aic
+							img(src="/img/rev/"+i+".png")
+							span.peoplename= names[i]
+							p.paraq.tac= textotz[i]
+						-};
+
+
+	section#project
+		.container
+			.wrp-content.dfc
+				.wrp-border.dfc
+					h4.section-title.tac.
+						Ремонт квартир под ключ – обретение комфорта, стиля, добротности!
+					form(action="mail.php" method="POST").dfc.formFooter
+						input(type="text" placeholder="ваше имя" name="username")
+						input(type="text" placeholder="номер телефона" name="usernumber")
+						button.call(type="submit") заказать сейчас
+
+
+	footer#footer
+		.container
+			.wrp-footer.df.fww.jsb.aic
+				span.telfooter
+					span по вопросам:
+					a(href="tel: 87010278008")  87010278008
+				
+				ul.df.aic.listsoc
+					li поделится:
+					each src in ['../img/svg/soc/insta.svg','../img/svg/soc/in.svg','../img/svg/soc/face.svg']
+						li
+							a(href='#').socbtn
+								img(src=src, alt="").svg
